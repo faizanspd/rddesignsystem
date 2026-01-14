@@ -1,0 +1,66 @@
+{
+  "radius": "sm",
+  "height": "32px",
+  "padding": {
+    "left": "12px",
+    "right": "12px"
+  },
+  "variants": {
+    "primary": {
+      "background": "#0D9488",
+      "text": "#FFFFFF",
+      "hoverBackground": "#14B8A6",
+      "disabledBackground": "#B2DFDB",
+      "rules": [
+        "Use for main actions",
+        "Text should be short and actionable",
+        "Icons only when helpful"
+      ]
+    },
+    "secondary": {
+      "background": "#FFFFFF",
+      "text": "#0D9488",
+      "border": "#0D9488",
+      "hoverBackground": "#F0FDFA",
+      "hoverBorder": "#0D9488",
+      "hoverText": "#0F766E",
+      "disabledText": "#B2DFDB",
+      "rules": [
+        "Use for secondary actions",
+        "Avoid using as primary",
+        "Text should be clear"
+      ]
+    },
+    "tertiary": {
+      "background": "transparent",
+      "text": "#0D9488",
+      "hoverBackground": "#F0FDFA",
+      "disabledText": "#B2DFDB",
+      "rules": [
+        "Use for less important actions",
+        "Minimal visual weight",
+        "Can pair with icons if needed"
+      ]
+    },
+    "ghost": {
+      "background": "transparent",
+      "text": "#303133",
+      "hoverBackground": "#F0FDFA",
+      "hoverText": "#0F766E",
+      "border": "none",
+      "rules": [
+        "Use for cancel or neutral actions",
+        "Keep text short",
+        "Avoid multiple ghost buttons together"
+      ]
+    }
+  },
+  "generalRules": [
+    "All buttons have radius-sm",
+    "Max height of 32px",
+    "Left and right padding of 12px",
+    "Text should be actionable and concise",
+    "Icons only when helpful",
+    "Maintain color contrast for accessibility"
+  ]
+}
