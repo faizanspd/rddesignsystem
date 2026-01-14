@@ -1,0 +1,73 @@
+{
+  "radius": "sm",
+  "background": "#FFFFFF",
+  "overlayBackground": "rgba(15, 23, 42, 0.5)",
+  "maxWidth": {
+    "default": "480px",
+    "table": "80%"
+  },
+  "maxHeight": {
+    "default": "auto",
+    "table": "80vh"
+  },
+  "padding": {
+    "content": {
+      "top": "16px",
+      "bottom": "16px",
+      "left": "16px",
+      "right": "16px"
+    },
+    "bottomBar": {
+      "top": "12px",
+      "bottom": "12px",
+      "left": "16px",
+      "right": "16px",
+      "buttonSpacing": "12px"
+    }
+  },
+  "typography": {
+    "title": {
+      "font": "Inter",
+      "size": "18px",
+      "weight": "500",
+      "lineHeight": "tailwind"
+    },
+    "body": {
+      "font": "Inter",
+      "size": "14px",
+      "weight": "400",
+      "lineHeight": "tailwind"
+    }
+  },
+  "titleBar": {
+    "height": "auto",
+    "borderBottom": "#DCDFE6",
+    "elements": ["title", "crossIcon"]
+  },
+  "bottomBar": {
+    "height": "auto",
+    "borderTop": "#DCDFE6",
+    "buttonHeight": "32px",
+    "buttonSpacing": "12px",
+    "alignment": "right"
+  },
+  "buttons": {
+    "primary": "use buttons.primary",
+    "secondary": "use buttons.secondary"
+  },
+  "rules": [
+    "Modals should always appear centered on the page",
+    "Overlay should cover the entire viewport with subtle opacity",
+    "Content padding is 16px on all sides except bottom bar buttons (top/bottom 12px, left/right 16px)",
+    "Max width defaults to 480px, or 80% if content is a table",
+    "Max height auto, or 80vh if content is a table or very tall content",
+    "Top title bar includes a title and a cross icon, with bottom border using #DCDFE6",
+    "Bottom navigation bar contains action buttons, top border #DCDFE6",
+    "Action buttons in bottom bar are height 32px, spaced 12px apart, aligned to the right",
+    "Content lives between the title bar and bottom bar",
+    "Use radius-sm for modal corners",
+    "Use white background with subtle shadow (shadows.default)",
+    "Text should follow typography rules",
+    "Keep modals concise; avoid unnecessary decoration"
+  ]
+}
