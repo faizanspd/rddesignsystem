@@ -1,0 +1,9 @@
+{
+  "library": "Tabler Icons",
+  "url": "https://tabler.io/icons",
+  "rules": [
+    "Use only when helpful",
+    "Avoid decorative icons",
+    "Keep sizes consistent"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "background": "#F3F4F6",
+  "card": "#FFFFFF",
+  "brand": {
+    "primary": "#0D9488",
+    "highlight": "#0F766E",
+    "light": "#F0FDFA"
+  },
+  "text": {
+    "primary": "#303133",
+    "secondary": "#606266",
+    "placeholder": "#909399"
+  },
+  "border": "#DCDFE6",
+  "status": {
+    "error": "#F56C6C",
+    "warning": "#D97706",
+    "info": "#0284C7",
+    "success": "#0D9488",
+    "altSuccess": "#67C23A"
+  }
+}

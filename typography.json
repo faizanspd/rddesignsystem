@@ -1,0 +1,24 @@
+{
+  "font": "Inter",
+  "pageTitle": {
+    "size": "20px",
+    "weight": "500",
+    "lineHeight": "tailwind"
+  },
+  "sectionHeader": {
+    "size": "18px",
+    "weight": "500",
+    "lineHeight": "tailwind"
+  },
+  "body": {
+    "size": "14px",
+    "maxSize": "16px",
+    "weight": "400",
+    "lineHeight": "tailwind"
+  },
+  "label": {
+    "size": "12-14px",
+    "weight": "400",
+    "lineHeight": "tailwind"
+  }
+}

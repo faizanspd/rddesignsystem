@@ -1,0 +1,13 @@
+{
+  "typography": "typography.json",
+  "colors": "colors.json",
+  "spacing": "spacing.json",
+  "radius": "radius.json",
+  "shadows": "shadows.json",
+  "icons": "icons.json",
+  "layoutRules": "layoutRules.json",
+  "components": {
+    "buttons": "components/buttons.json",
+    "modals": "components/modals.json"
+  }
+}
