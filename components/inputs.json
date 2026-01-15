@@ -103,6 +103,7 @@
     "Disabled state uses light gray background and muted text",
     "Labels and input text both use 14px typography",
     "Helper text appears below the field",
+    "Label and input field must have 4px vertical spacing",
     "Same field styles apply to dropdowns and search inputs"
   ],
 
