@@ -1,0 +1,115 @@
+{
+  "radius": "sm",
+  "height": {
+    "default": "32px",
+    "large": "40px"
+  },
+
+  "padding": {
+    "left": "12px",
+    "right": "12px",
+    "iconSpacing": "8px"
+  },
+
+  "border": {
+    "default": "#DCDFE6",
+    "active": "#0D9488",
+    "error": "#F56C6C",
+    "disabled": "#E4E7ED"
+  },
+
+  "background": {
+    "default": "#FFFFFF",
+    "disabled": "#F5F7FA"
+  },
+
+  "text": {
+    "input": "#303133",
+    "placeholder": "#909399",
+    "helper": "#606266",
+    "error": "#DC2626",
+    "disabled": "#909399"
+  },
+
+  "typography": {
+    "label": {
+      "size": "14px",
+      "weight": "400",
+      "lineHeight": "tailwind"
+    },
+    "inputText": {
+      "size": "14px",
+      "weight": "400",
+      "lineHeight": "tailwind"
+    },
+    "helperText": {
+      "size": "12-14px",
+      "weight": "400",
+      "lineHeight": "tailwind"
+    }
+  },
+
+  "states": {
+    "default": {
+      "border": "#DCDFE6",
+      "text": "#303133",
+      "placeholder": "#909399"
+    },
+    "active": {
+      "border": "#0D9488",
+      "text": "#303133"
+    },
+    "error": {
+      "border": "#F56C6C",
+      "helperText": "#F56C6C",
+      "messageExample": "Required field"
+    },
+    "disabled": {
+      "background": "#F5F7FA",
+      "border": "#E4E7ED",
+      "text": "#909399"
+    }
+  },
+
+  "icons": {
+    "size": "16px",
+    "spacingFromText": "8px",
+    "rules": [
+      "Use icons only when helpful",
+      "Keep icon size consistent",
+      "Align icon vertically center"
+    ]
+  },
+
+  "variants": {
+    "text": "Standard text input",
+    "dropdown": "Uses same field styles with a caret icon",
+    "search": "Uses same field styles with a search icon",
+    "prefix": "Field with static prefix like $ or %",
+    "suffix": "Field with static suffix text or icon",
+    "prefixDropdown": "Prefix is a selectable dropdown",
+    "suffixDropdown": "Suffix is a selectable dropdown"
+  },
+
+  "rules": [
+    "Default input height is 32px",
+    "Large input height (40px) should only be used when explicitly required",
+    "All inputs use radius-sm (6px)",
+    "Left and right padding is 12px",
+    "Icons inside fields must be 16px with 8px spacing from text",
+    "Placeholder text uses placeholder color",
+    "Active state uses brand primary border",
+    "Error state uses red border and red helper text",
+    "Disabled state uses light gray background and muted text",
+    "Labels and input text both use 14px typography",
+    "Helper text appears below the field",
+    "Same field styles apply to dropdowns and search inputs"
+  ],
+
+  "usageExamples": {
+    "searchField": "Use a 16px search icon on the left with 8px spacing from the text",
+    "currencyField": "Use a static $ prefix inside the field",
+    "errorField": "Show red border and helper text like 'Required field'",
+    "disabledField": "Use light gray background and placeholder text color"
+  }
+}
