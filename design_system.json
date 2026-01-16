@@ -5,9 +5,11 @@
   "radius": "radius.json",
   "shadows": "shadows.json",
   "icons": "icons.json",
-  "layoutRules": "layoutRules.json",
+  "layoutRules": "layoutrules.json",
   "components": {
     "buttons": "components/buttons.json",
-    "modals": "components/modals.json"
+    "modals": "components/modals.json",
+    "inputs": "components/inputs.json",
+    "tables": "components/tables.json"
   }
 }
