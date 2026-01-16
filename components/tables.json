@@ -1,0 +1,125 @@
+{
+  "table": {
+    "layout": {
+      "density": "condensed",
+      "rowHeight": "40px",
+      "cellPadding": "12px",
+      "textWrapping": {
+        "default": "no-wrap",
+        "maxLines": 2,
+        "allowWhenNeeded": true
+      },
+      "stickyHeader": true,
+      "fullRowClickable": true
+    },
+
+    "header": {
+      "background": {
+        "default": "#FFFFFF",
+        "inCard": "#F5F7FA"
+      },
+      "labels": {
+        "style": "short",
+        "fontSize": "14px",
+        "fontWeight": "medium"
+      },
+      "sorting": {
+        "iconsVisible": "on-hover",
+        "activeColor": "#73767A",
+        "inactiveColor": "#C7C9CC"
+      }
+    },
+
+    "borders": {
+      "visible": "bottom-only",
+      "colorToken": "borderLight"
+    },
+
+    "typography": {
+      "primaryText": {
+        "fontSize": "14px",
+        "fontWeight": "medium",
+        "colorToken": "textPrimary"
+      },
+      "secondaryText": {
+        "fontSize": "14px",
+        "fontWeight": "regular",
+        "colorToken": "textSecondary"
+      }
+    },
+
+    "rowStates": {
+      "hover": {
+        "backgroundToken": "fill_light"
+      },
+      "selection": {
+        "modes": ["checkbox", "rowHighlight"],
+        "behavior": "depends-on-context"
+      }
+    },
+
+    "editableCells": {
+      "activeState": {
+        "color": "#0F766E",
+        "decoration": "dotted-underline"
+      },
+      "completedState": {
+        "color": "inherit",
+        "decoration": "none"
+      }
+    },
+
+    "actionsColumn": {
+      "position": "right",
+      "maxActions": 3,
+      "iconGap": "2px",
+      "hoverStyle": "ghost",
+      "hasTitle": false,
+      "shadow": {
+        "whenScrollable": true,
+        "whenNotScrollable": false
+      }
+    },
+
+    "topControls": {
+      "dateFilterTabs": {
+        "enabled": "optional",
+        "options": [
+          "Today",
+          "Yesterday",
+          "Last 7 days",
+          "This month",
+          "Last month",
+          "This year",
+          "All"
+        ]
+      },
+      "settingsIcon": {
+        "position": "top-right",
+        "stickyWhenScrollable": true,
+        "function": "column-layout-customization"
+      }
+    },
+
+    "pagination": {
+      "position": "bottom",
+      "left": {
+        "rowsPerPage": [25, 50, 100],
+        "statusText": "25 of 100"
+      },
+      "right": {
+        "style": "ghost-buttons",
+        "controls": ["chevron-left", "1", "2", "3", "4", "5", "chevron-right"]
+      }
+    },
+
+    "emptyState": {
+      "elements": {
+        "iconOrIllustration": true,
+        "message": true,
+        "actionButton": "optional"
+      },
+      "purpose": "guide-user-to-next-action"
+    }
+  }
+}
