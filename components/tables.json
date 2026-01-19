@@ -4,122 +4,170 @@
       "density": "condensed",
       "rowHeight": "40px",
       "cellPadding": "12px",
-      "textWrapping": {
-        "default": "no-wrap",
-        "maxLines": 2,
-        "allowWhenNeeded": true
-      },
-      "stickyHeader": true,
-      "fullRowClickable": true
+      "headerSticky": true,
+      "headerBackground": {
+        "default": "#FFFFFF",
+        "insideCard": "#F5F7FA"
+      }
     },
 
-    "header": {
-      "background": {
-        "default": "#FFFFFF",
-        "inCard": "#F5F7FA"
+    "borders": {
+      "rowDivider": "#E4E7ED",
+      "visibleSides": ["bottom"]
+    },
+
+    "typography": {
+      "header": {
+        "size": "14px",
+        "weight": "500",
+        "wrap": false
       },
-      "labels": {
-        "style": "short",
-        "fontSize": "14px",
-        "fontWeight": "medium"
+      "bodyPrimary": {
+        "size": "14px",
+        "weight": "500",
+        "color": "text.primary"
       },
-      "sorting": {
-        "iconsVisible": "on-hover",
+      "bodySecondary": {
+        "size": "14px",
+        "weight": "400",
+        "color": "text.secondary"
+      }
+    },
+
+    "sorting": {
+      "icons": {
+        "visibleOnHoverOnly": true,
         "activeColor": "#73767A",
         "inactiveColor": "#C7C9CC"
       }
     },
 
-    "borders": {
-      "visible": "bottom-only",
-      "colorToken": "borderLight"
-    },
-
-    "typography": {
-      "primaryText": {
-        "fontSize": "14px",
-        "fontWeight": "medium",
-        "colorToken": "textPrimary"
-      },
-      "secondaryText": {
-        "fontSize": "14px",
-        "fontWeight": "regular",
-        "colorToken": "textSecondary"
-      }
-    },
-
     "rowStates": {
       "hover": {
-        "backgroundToken": "fill_light"
+        "background": "fill_light"
       },
       "selection": {
         "modes": ["checkbox", "rowHighlight"],
-        "behavior": "depends-on-context"
+        "wholeRowClickable": true
       }
     },
 
     "editableCells": {
-      "activeState": {
+      "editingState": {
         "color": "#0F766E",
-        "decoration": "dotted-underline"
+        "underline": "dotted"
       },
       "completedState": {
-        "color": "inherit",
-        "decoration": "none"
+        "revertTo": ["text.primary", "text.secondary"]
       }
     },
 
     "actionsColumn": {
       "position": "right",
+      "sticky": true,
       "maxActions": 3,
-      "iconGap": "2px",
+      "gap": "2px",
+      "headerTitle": false,
       "hoverStyle": "ghost",
-      "hasTitle": false,
-      "shadow": {
-        "whenScrollable": true,
-        "whenNotScrollable": false
-      }
-    },
-
-    "topControls": {
-      "dateFilterTabs": {
-        "enabled": "optional",
-        "options": [
-          "Today",
-          "Yesterday",
-          "Last 7 days",
-          "This month",
-          "Last month",
-          "This year",
-          "All"
-        ]
-      },
-      "settingsIcon": {
-        "position": "top-right",
-        "stickyWhenScrollable": true,
-        "function": "column-layout-customization"
-      }
+      "shadowWhenScrollable": true,
+      "noShadowWhenStatic": true
     },
 
     "pagination": {
       "position": "bottom",
       "left": {
-        "rowsPerPage": [25, 50, 100],
-        "statusText": "25 of 100"
+        "rowsPerPage": {
+          "type": "dropdown",
+          "options": [25, 50, 100],
+          "selected": 25
+        },
+        "summaryText": {
+          "format": "Showing 1–25 of 100",
+          "textStyle": "secondary"
+        }
       },
       "right": {
-        "style": "ghost-buttons",
-        "controls": ["chevron-left", "1", "2", "3", "4", "5", "chevron-right"]
+        "buttons": ["chevron-left", "1", "2", "3", "4", "5", "chevron-right"],
+        "variant": "ghost"
       }
     },
 
+    "dateFilterTabs": {
+      "enabled": true,
+      "style": "secondary",
+      "variant": "outlined",
+      "options": [
+        "Today",
+        "Yesterday",
+        "Last 7 Days",
+        "This Month",
+        "Last Month",
+        "This Year",
+        "All"
+      ],
+      "optional": true
+    },
+
+    "settingsControl": {
+      "icon": "cog",
+      "position": "topRight",
+      "floatsOverTableWhenScrollable": true
+    },
+
     "emptyState": {
-      "elements": {
-        "iconOrIllustration": true,
-        "message": true,
-        "actionButton": "optional"
-      },
-      "purpose": "guide-user-to-next-action"
+      "includes": ["iconOrIllustration", "message", "actionButton"],
+      "alignment": "center"
     }
+  },
+
+  "tableFilters": {
+    "layout": {
+      "position": "aboveTable",
+      "spacingFromTable": "16px",
+      "cardPadding": {
+        "leftRight": "16px",
+        "topBottom": "12px"
+      },
+      "grid": {
+        "maxColumns": 4,
+        "defaultColumns": 3,
+        "gap": "12px"
+      }
+    },
+
+    "inputs": {
+      "allowed": "any",
+      "rules": [
+        "All input fields must follow input.json tokens",
+        "Inputs must align in a grid layout",
+        "All inputs must use consistent height, padding, and radius",
+        "Icons, dropdowns, calendars, and custom fields must follow input field rules",
+        "Do not invent new input styles"
+      ]
+    },
+
+    "actions": {
+      "primary": {
+        "variant": "primary",
+        "label": "Search",
+        "height": "32px"
+      },
+      "secondary": {
+        "variant": "tertiary",
+        "label": "Reset",
+        "icon": "refresh",
+        "height": "32px"
+      },
+      "alignment": "right",
+      "gap": "spacing-md"
+    },
+
+    "rules": [
+      "Filter section must be visually separated from the table",
+      "Use a card container for filters",
+      "Do not exceed 4 inputs per row on 1440px screens",
+      "Inputs may wrap to a second row on smaller screens",
+      "Buttons must follow button.json tokens"
+    ]
   }
 }
