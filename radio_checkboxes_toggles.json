@@ -1,0 +1,163 @@
+{
+  "radio": {
+    "sizes": {
+      "default": "14px",
+      "large": "16px"
+    },
+    "color": "colors.brand.primary",
+    "glow": "colors.effects.focusGlow",
+    "typography": "typography.body",
+    "textColor": "colors.text.primary",
+    "gap": "spacing.sm",
+
+    "states": {
+      "inactive": {
+        "border": "colors.border",
+        "fill": "transparent",
+        "innerCircle": "none"
+      },
+      "hover": {
+        "border": "colors.brand.primary",
+        "glow": "colors.effects.focusGlow"
+      },
+      "active": {
+        "border": "colors.brand.primary",
+        "fill": "colors.brand.primary",
+        "innerCircle": "#FFFFFF"
+      },
+      "disabled": {
+        "border": "colors.border",
+        "fill": "colors.background",
+        "innerCircle": "#D1D5DB",
+        "text": "colors.text.placeholder"
+      }
+    },
+
+    "layout": {
+      "labelPosition": "right",
+      "stacking": ["horizontal", "vertical"]
+    },
+
+    "accessibility": {
+      "keyboard": true,
+      "focusRing": true,
+      "ariaRole": "radio"
+    },
+
+    "shadows": "none",
+    "transition": "smooth"
+  },
+
+  "checkbox": {
+    "sizes": {
+      "default": "14px",
+      "large": "16px"
+    },
+    "color": "colors.brand.primary",
+    "glow": "colors.effects.focusGlow",
+    "typography": "typography.body",
+    "textColor": "colors.text.primary",
+    "gap": "spacing.sm",
+
+    "states": {
+      "inactive": {
+        "border": "colors.border",
+        "fill": "transparent",
+        "icon": "none"
+      },
+      "hover": {
+        "border": "colors.brand.primary",
+        "glow": "colors.effects.focusGlow"
+      },
+      "checked": {
+        "border": "colors.brand.primary",
+        "fill": "colors.brand.primary",
+        "icon": "#FFFFFF"
+      },
+      "indeterminate": {
+        "border": "colors.brand.primary",
+        "fill": "colors.brand.primary",
+        "icon": "horizontal_line"
+      },
+      "disabled": {
+        "border": "colors.border",
+        "fill": "colors.background",
+        "icon": "#D1D5DB",
+        "text": "colors.text.placeholder"
+      }
+    },
+
+    "layout": {
+      "labelPosition": "right",
+      "stacking": ["horizontal", "vertical"]
+    },
+
+    "accessibility": {
+      "keyboard": true,
+      "focusRing": true,
+      "ariaRole": "checkbox"
+    },
+
+    "shadows": "none",
+    "transition": "smooth"
+  },
+
+  "toggle": {
+    "sizes": {
+      "default": {
+        "height": "20px",
+        "circle": "16px"
+      },
+      "container": {
+        "height": "32px",
+        "paddingX": "spacing.lg",
+        "paddingY": "auto"
+      }
+    },
+
+    "color": "colors.brand.primary",
+    "glow": "colors.effects.focusGlow",
+    "typography": "typography.body",
+    "textColor": "colors.text.primary",
+    "gap": "spacing.sm",
+
+    "states": {
+      "off": {
+        "background": "colors.border",
+        "circle": "#FFFFFF"
+      },
+      "on": {
+        "background": "colors.brand.primary",
+        "circle": "#FFFFFF"
+      },
+      "hover": {
+        "background": "colors.brand.light",
+        "glow": "colors.effects.focusGlow"
+      },
+      "disabled": {
+        "background": "colors.background",
+        "circle": "colors.border",
+        "text": "colors.text.placeholder"
+      }
+    },
+
+    "types": {
+      "default": "toggle with text",
+      "container": "toggle inside 32px container"
+    },
+
+    "layout": {
+      "labelPosition": "right",
+      "stacking": ["horizontal", "vertical"]
+    },
+
+    "accessibility": {
+      "keyboard": true,
+      "focusRing": true,
+      "ariaRole": "switch"
+    },
+
+    "shadows": "none",
+    "transition": "smooth"
+  }
+}
