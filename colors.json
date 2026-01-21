@@ -1,17 +1,25 @@
 {
   "background": "#F3F4F6",
   "card": "#FFFFFF",
+
   "brand": {
     "primary": "#0D9488",
     "highlight": "#0F766E",
     "light": "#F0FDFA"
   },
+
   "text": {
     "primary": "#303133",
     "secondary": "#606266",
-    "placeholder": "#909399"
+    "placeholder": "#909399",
+    "brand": "#0F766E"
   },
-  "border": "#DCDFE6",
+
+  "border": {
+    "default": "#DCDFE6",
+    "light": "#E4E7ED"
+  },
+
   "status": {
     "error": "#F56C6C",
     "warning": "#D97706",
