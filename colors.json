@@ -21,10 +21,39 @@
   },
 
   "status": {
-    "error": "#F56C6C",
-    "warning": "#D97706",
-    "info": "#0284C7",
-    "success": "#0D9488",
-    "altSuccess": "#67C23A"
+    "error": {
+      "icon": "#F56C6C",
+      "text": "#DC2626",
+      "bg": "#FEF0F0",
+      "border": "#FDE2E2"
+    },
+
+    "warning": {
+      "text": "#B45309",
+      "icon": "#D97706",
+      "bg": "#FFFBEB",
+      "border": "#FDE68A"
+    },
+
+    "info": {
+      "text": "#0284C7",
+      "icon": "#0EA5E9",
+      "bg": "#E0F2FE",
+      "border": "#BAE6FD"
+    },
+
+    "success": {
+      "text": "#0F766E",
+      "icon": "#0D9488",
+      "bg": "#F0FDFA",
+      "border": "#CCFBF1"
+    },
+
+    "altSuccess": {
+      "text": "#437E25",
+      "icon": "#529B2E",
+      "bg": "#F0F9EB",
+      "border": "#D1EDC4"
+    }
   }
 }
