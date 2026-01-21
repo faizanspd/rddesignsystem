@@ -1,0 +1,48 @@
+{
+  "alerts": {
+    "error": {
+      "icon": "status.error.icon",
+      "text": "status.error.text",
+      "background": "status.error.bg",
+      "border": "status.error.border"
+    },
+    "warning": {
+      "icon": "status.warning.icon",
+      "text": "status.warning.text",
+      "background": "status.warning.bg",
+      "border": "status.warning.border"
+    },
+    "info": {
+      "icon": "status.info.icon",
+      "text": "status.info.text",
+      "background": "status.info.bg",
+      "border": "status.info.border"
+    },
+    "success": {
+      "icon": "status.success.icon",
+      "text": "status.success.text",
+      "background": "status.success.bg",
+      "border": "status.success.border"
+    },
+    "altSuccess": {
+      "icon": "status.altSuccess.icon",
+      "text": "status.altSuccess.text",
+      "background": "status.altSuccess.bg",
+      "border": "status.altSuccess.border"
+    },
+    "generalRules": {
+      "borderRadius": "radius.sm",
+      "padding": "spacing-md",
+      "shadow": "subtle",
+      "typography": "body 14px, regular",
+      "iconSize": "16px",
+      "gapTextIcon": "spacing-sm",
+      "transition": "smooth",
+      "focusAccessibility": {
+        "keyboard": true,
+        "focusRing": true,
+        "ariaRole": "alert"
+      }
+    }
+  }
+}
