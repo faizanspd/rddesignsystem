@@ -1,0 +1,83 @@
+{
+  "tags": {
+    "generalRules": {
+      "borderRadius": "radius.xsm",
+      "iconGap": "4px",
+      "iconSize": "12px",
+      "typography": {
+        "font": "Inter",
+        "weight": 500,
+        "size": "12px"
+      },
+      "hover": {
+        "opacity": 0.9
+      },
+      "transition": "smooth",
+      "accessibility": {
+        "keyboard": true,
+        "focusRing": true,
+        "ariaRole": "status"
+      }
+    },
+    "variants": {
+      "xsmall": {
+        "height": "20px",
+        "padding": "0 6px"
+      },
+      "small": {
+        "height": "24px",
+        "padding": "0 8px"
+      }
+    },
+    "types": {
+      "error": {
+        "textColor": "status.error.text",
+        "backgroundColor": "status.error.bg",
+        "borderColor": "status.error.border",
+        "iconColor": "status.error.icon",
+        "iconOptional": true
+      },
+      "warning": {
+        "textColor": "status.warning.text",
+        "backgroundColor": "status.warning.bg",
+        "borderColor": "status.warning.border",
+        "iconColor": "status.warning.icon",
+        "iconOptional": true
+      },
+      "success": {
+        "textColor": "text.card",
+        "backgroundColor": "brand.primary",
+        "borderColor": "brand.primary",
+        "iconColor": "brand.primary",
+        "iconOptional": true
+      },
+      "altSuccess": {
+        "textColor": "status.altSuccess.text",
+        "backgroundColor": "status.altSuccess.bg",
+        "borderColor": "status.altSuccess.border",
+        "iconColor": "status.altSuccess.icon",
+        "iconOptional": true
+      },
+      "info": {
+        "textColor": "status.info.text",
+        "backgroundColor": "status.info.bg",
+        "borderColor": "status.info.border",
+        "iconColor": "status.info.icon",
+        "iconOptional": true
+      },
+      "new": {
+        "textColor": "#FFFFFF",
+        "backgroundColor": "brand.primary",
+        "borderColor": "brand.primary",
+        "iconOptional": true
+      },
+      "violet": {
+        "textColor": "#6D28D9",
+        "backgroundColor": "#EDE9FE",
+        "borderColor": "#DDD6FE",
+        "iconColor": "#7C3AED",
+        "iconOptional": true
+      }
+    }
+  }
+}
