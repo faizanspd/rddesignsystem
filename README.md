@@ -1,6 +1,6 @@
 # rddesignsystem
 -
-# 🎨 Color Guidelines
+# Color Guidelines 🎨 
 
 This document explains how each color token is used across the product to ensure visual consistency, accessibility, and predictable UI behavior.
 
@@ -228,3 +228,61 @@ Each status color has:
 - Border color  
 
 This ensures accessibility and consistent UI behavior across all components.
+
+
+## Alerts 🚨
+
+Alerts are used to communicate system feedback to users, such as errors, warnings, informational messages, and success confirmations. Each alert uses the status colors defined in the design system, ensuring consistency across the app. Refer to the **Colors section** for the exact color tokens.
+
+### Error Alerts ❌
+- **Purpose:** Communicate critical errors that require user attention.
+- **Usage Examples:**
+  - Input helper errors (e.g., "Required field")
+  - Form validation messages
+  - Error banners
+  - Table error indicators
+
+### Warning Alerts ⚠️
+- **Purpose:** Provide cautionary messages that are not critical.
+- **Usage Examples:**
+  - Warning alerts
+  - Risk notifications
+  - Non-blocking caution messages
+
+### Info Alerts ℹ️
+- **Purpose:** Display general information or guidance.
+- **Usage Examples:**
+  - Informational banners
+  - System guidance messages
+  - Info alerts
+
+### Success Alerts ✅
+- **Purpose:** Indicate successful actions or confirmations.
+- **Usage Examples:**
+  - Success banners
+  - Completed actions
+  - Confirmation messages
+
+### Alt Success Alerts 🏷️
+- **Purpose:** Specifically for tags or compact success indicators.
+- **Usage Examples:**
+  - Success tags
+  - Label chips
+  - Compact status indicators
+
+### General Rules for All Alerts
+- Use `status` color tokens from the design system for **icon, text, background, and border**.  
+- Border radius: `radius.sm`  
+- Padding: `spacing-md`  
+- Shadow: subtle  
+- Typography: body 14px, regular weight  
+- Icon size: 16px  
+- Gap between text and icon: `spacing-sm`  
+- Transition: smooth  
+- Accessibility:
+  - Keyboard focus: true
+  - Focus ring: true
+  - ARIA role: `alert`
+
+> Note: All colors should reference the tokens in **colors.json** to ensure consistency across all alerts and UI components.
+
