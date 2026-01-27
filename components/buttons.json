@@ -19,9 +19,9 @@
     },
     "secondary": {
       "background": "#FFFFFF",
-      "text": "#0D9488",
-      "border": "#0D9488",
-      "hoverBackground": "#F0FDFA",
+      "text": "#303133",
+      "border": "#DCDFE6",
+      "hoverBackground": "#FFFFFF",
       "hoverBorder": "#0D9488",
       "hoverText": "#0F766E",
       "disabledText": "#B2DFDB",
@@ -33,8 +33,9 @@
     },
     "tertiary": {
       "background": "transparent",
-      "text": "#0D9488",
-      "hoverBackground": "#F0FDFA",
+      "text": "#606266",
+      "hoverBackground": "transparent",
+      "hoverText": "#0F766E",
       "disabledText": "#B2DFDB",
       "rules": [
         "Use for less important actions",
